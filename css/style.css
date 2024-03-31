@@ -1,26 +1,94 @@
-.axis path,
-.axis line {
+body, h2, h3, p {
+    background-color: #eef1f7
+}
+
+.map {
+    border: medium solid #999;
+    margin: 10px auto; /* Centered the map and gave equal margin on top and bottom */
+}
+
+.chart {
+    background-color: rgba(128,128,128,.2);
+    border: medium solid #999;
+    margin: 10px auto; 
+}
+
+.state {
+    stroke: #000;
+    stroke-width: .5px;
+    stroke-linecap: round;
+}
+
+.chartTitle {
+    font-size: 1.75em;
+    font-weight: bold;
+}
+
+.chartFrame {
     fill: none;
-    stroke: black;
+    stroke: #999;
+    stroke-width: 3px;
+    shape-rendering: crispEdges;
+}
+
+.axis path, .axis line {
+    fill: none;
+    stroke: #999;
     stroke-width: 1px;
     shape-rendering: crispEdges;
 }
 
 .axis text {
-    font-family: sans-serif;
-    font-size: 0.9em;
+    font-size: 0.8em;
+    fill: #999;
 }
 
-.gratLines {
-    fill: none;
-    stroke: #999;
-    stroke-width: 1px;
+.dropdown {
+    position: absolute;
+    top: 30px;
+    left: 50%; 
+    transform: translateX(-50%); 
+    z-index: 15; 
+    font-size: 1em;
+    font-weight: bold;
+    padding: 3px;
+    border: 1px solid #999;
+    box-shadow: 2px 2px 4px #999;
 }
 
-.gratBackground {
-    fill: #D5E3FF;
+option {
+    font-weight: normal;
 }
 
-.map {
-    border: medium solid #999;
+.infolabel {
+    position: absolute;
+    height: 50px;
+    min-width: 50px;
+    color: #fff;
+    background-color: #3e7cf0;
+    border: solid thin #fff;
+    padding: 10px 10px;
+    z-index: 10;
+    text-align: center;
+}
+
+.infolabel h1 {
+    margin: 0 10px 0;
+    padding: 0;
+    display: inline-block;
+    line-height: 1em;
+}
+
+.contentContainer {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.mapDropdownContainer, .chartContainer {
+    flex: 1;
+    text-align: center; 
+    position: relative;
 }

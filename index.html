@@ -7,33 +7,78 @@
 
         <!--put your external stylesheet links here-->
         <link rel="stylesheet" href="css/style.css">
+    
         <!--[if IE<9]>
             <link rel="stylesheet" href="css/style.ie.css">
         <![endif]-->
     </head>
 
-    <body>
+    <body>  
         <!-- Overall Container -->
         <div class="contentContainer">
-     
+            
+            <div>
+            <button class="zoom-button" id="zoom-in">
+                <svg width="20" height="20" viewBox="0 0 24 24">
+                    <path d="M21 2h2zm-8-4V3h2v9h9v2h-9v9h-2v-9H3v-2h10z"/>
+                </svg>
+            </button>
+                
+            <button class="zoom-button" id="zoom-out">
+                <svg width="20" height="20" viewBox="0 0 24 24">
+                    <path d="M21 14H3v-2h18v2z"/>
+                </svg>
+            </button>   
+            </div>
+            
+            <!-- Title -->
+            <div class="titleContainer">
+                <h1>Mental Distress in People 65 and Older</h1>
+            </div>
+            
             <!-- Container for map and dropdown -->
             <div class="mapDropdownContainer">
-
                 <!-- Dropdown -->
                 <div class="dropdownContainer"></div>
-
                 <!-- Map -->
                 <div class="mapContainer"></div>
-
             </div>
 
             <!-- Chart -->
             <div class="chartContainer"></div>
-        </div>
+            
+            <!-- Containers for info and sources -->
+            <div class="descriptionContainer">
+                <div class="description">
+                    <h2>Information</h2>
+                    
+                    <p>This application shows the percentage of people in the United States that are age 65 and over that have been diagnosed with some type of mental distress related to aging.</p>
+                    
+                    <p><h3>(2015 - 2021)</h3></p>
+                </div>
+            </div>
+            
+            <div class="backgroundContainer">
+                <div class="background">
+                    <h2>Background</h2>
 
+                    <p>"Mental health is important at every stage of life and it includes emotional, psychological, and social well-being.  As people age, they may experience certain life changes that impact their mental health, such as coping with a serious illness or losing a loved one. Although many people will adjust to these life changes, some may experience feelings of grief, social isolation, or loneliness. When these feelings persist, they can lead to mental illnesses, such as depression and anxiety.  Effective treatment options are available to help older adults and people at every stage of life to manage their mental health and improve their quality of life. Recognizing the signs and seeing a health care provider are the first steps to getting treatment." <br><br>(Source: CDC, Division of Population Health, National Center for Chronic Disease Prevention and Health Promotion, June 29, 2023)</p>
+                </div>
+            </div>
+        
+            <div class="sourceContainer">
+                <div class="sources">
+                    <h2>Sources</h2>
+                    <p>DATA.GOV  <a href="https://catalog.data.gov/dataset/alzheimers-disease-and-healthy-aging-data" target="_blank">Alzheimer's Disease and Healthy Aging Data</a></p>
+                    <p>Centers for Disease Control and Prevention  <a href="https://www.cdc.gov/brfss/index.html" target="_blank">Behavioral Risk Factor Surveillance System</a></p>
+                    <p>Centers for Disease Control and Prevention  <a href="https://www.cdc.gov/aging/olderadultsandhealthyaging/mental-health-and-aging.html#print" target="_blank">Mental Health and Aging</a></p>
+                </div>
+            </div>
+        </div>
+    
         <!--put your external script links here-->
         <script type="text/javascript" src="lib/D3.js"></script>
         <script stype="text/javascript" src="lib/topojson.js"></script>
-        <script type="text/javascript" src="js/main_Activity10.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
     </body>
 </html>
